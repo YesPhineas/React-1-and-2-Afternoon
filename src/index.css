@@ -23,6 +23,9 @@ body {
 }
 
 .card{
+  display: flex;
+  justify-content: space-between;
+  color: black;
   background: lavender;
   height: 400px;
   width: 850px;
@@ -46,7 +49,7 @@ body {
 
 .previous{
   margin-top: 1vh;
-
+  font-weight: bold;
   background-color: black;
   border: none;
   color: white;
@@ -55,6 +58,7 @@ body {
 
 .next{
   margin-top: 1vh;
+  font-weight: bold;
   background-color: black;
   border: none;
   color: white;
@@ -65,4 +69,41 @@ body {
   display: flex;
   justify-content: space-between;
   width: 850px;
+}
+
+.left-info{
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.person-name{
+  display: flex;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline dodgerblue;
+}
+
+.person-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.person-movies{
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.num-of-num{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
 }
