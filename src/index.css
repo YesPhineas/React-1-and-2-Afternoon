@@ -1,7 +1,6 @@
 *{
-  display: flex;
   margin: 0;
-  justify-content: center;
+  text-align: center;
 }
 
 body {
@@ -15,15 +14,55 @@ body {
 }
 
 .home-bar{
+  display:flex;
+  flex-direction: left;
+  align-items: center;
   background: dodgerblue;
+  width: 100vw;
+  height: 12vh;
 }
 
 .card{
   background: lavender;
+  height: 400px;
+  width: 850px;
+  margin-top: 12vh;
 }
 
 .button-txt{
   color: white
 }
 
+.home-txt{
+  margin-left: 10vw;
+  color: black;
+}
 
+.lots{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.previous{
+  margin-top: 1vh;
+
+  background-color: black;
+  border: none;
+  color: white;
+  font-size:20px;
+}
+
+.next{
+  margin-top: 1vh;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size:20px;
+}
+
+.button{
+  display: flex;
+  justify-content: space-between;
+  width: 850px;
+}
