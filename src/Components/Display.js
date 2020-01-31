@@ -6,7 +6,10 @@ import Buttons from './Buttons'
 class Display extends React.Component{
     constructor(props){
         super(props)
-
+        
+        this.state = {
+            index: 0
+        }
     }
 
 
@@ -19,20 +22,20 @@ class Display extends React.Component{
                 <section>
                     <div className='card'>
                         <div className='left-info'>
-                            <div className='person-name'>Name</div>
+                            <div className='person-name'>{`${Data[this.state.index].name.first} ${Data[this.state.index].name.last}`}</div>
                             <div className='person-info'>
-                                <div>From:</div>
-                                <div>Job Title:</div>
-                                <div>Employer:</div>
+                                <div>From: {`${Data[this.state.index].city} ${Data[this.state.index].country}`} </div>
+                                <div>Job Title: {Data[this.state.index].title} </div>
+                                <div>Employer: {Data[this.state.index].employer} </div>
                             </div>
                             <div className='person-movies'>
                                 Favorite Movies:
-                                <div>1.</div>
-                                <div>2.</div>
-                                <div>3.</div>
+                                <div>1. {Data[this.state.index].favoriteMovies[0]} </div>
+                                <div>2. {Data[this.state.index].favoriteMovies[1]} </div>
+                                <div>3. {Data[this.state.index].favoriteMovies[2]} </div>
                             </div>
                         </div>
-                        <div className='num-of-num'>0/0</div>
+                        <div className='num-of-num'>{Data[this.state.index].id}/{Data.length}</div>
                     </div>
                 </section>
                 <section className='button'>
