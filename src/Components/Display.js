@@ -1,6 +1,7 @@
 import React from 'react'
 import '../index.css'
 import data from './data'
+import Head from './Head'
 
 class Display extends React.Component{
     constructor(props){
@@ -36,7 +37,7 @@ class Display extends React.Component{
         
         return(
             <div className='lots'>
-                <section className='home-bar'><h2 className='home-txt'>Home</h2></section>
+                <section className='home-bar'> <Head/> </section>
                 <section>
                     <div className='card'>
                         <div className='left-info'>
